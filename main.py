@@ -34,15 +34,15 @@ def initiate_server():
     print("File loading....")
     print(os.getcwd())
     global team_dict
-    team_dict = joblib.load('./modelData/teamDict.pkl')
+    team_dict = joblib.load('teamDict.pkl')
     global stadium_dict
-    stadium_dict = joblib.load('./modelData/stadiumDict.pkl')
+    stadium_dict = joblib.load('stadiumDict.pkl')
     global list_of_stadiums
     list_of_stadiums = list(stadium_dict.keys())
     global list_of_teams
     list_of_teams = list(team_dict.keys())
     global model
-    model = joblib.load('./modelData/linearModelforIPL2.pkl')
+    model = joblib.load('linearModelforIPL2.pkl')
 
 
 
