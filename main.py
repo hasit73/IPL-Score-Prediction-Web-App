@@ -11,7 +11,6 @@ stadium_dict ={}
 team_dict = {}
 model = None
 
-initiate_server()
 
 
 @app.route('/', methods=['POST','GET'])
@@ -46,7 +45,9 @@ def initiate_server():
     list_of_teams = list(team_dict.keys())
     global model
     model = joblib.load('linearModelforIPL2.pkl')
-
+    
+    
+initiate_server()
 
 if __name__ == "__main__":
     print("flask server started")
