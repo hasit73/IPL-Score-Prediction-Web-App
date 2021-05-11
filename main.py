@@ -43,6 +43,11 @@ def initiate_server():
     list_of_teams = list(team_dict.keys())
     global model
     model = joblib.load('linearModelforIPL2.pkl')
+    
+    print("=============================== team dict ============================",team_dict)
+    print("=============================== stadium dict ============================",stadium_dict)
+    print("=============================== stadium list ============================",list_of_stadiums)
+    
 
 
 
