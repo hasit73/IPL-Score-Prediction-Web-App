@@ -11,6 +11,9 @@ stadium_dict ={}
 team_dict = {}
 model = None
 
+initiate_server()
+
+
 @app.route('/', methods=['POST','GET'])
 def home():
     score = 0
