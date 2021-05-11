@@ -45,8 +45,8 @@ def initiate_server():
     model = joblib.load('linearModelforIPL2.pkl')
 
 
-
-print("flask server started")
-initiate_server()
-app.run(debug=True,use_reloader=False)
+if __name__ == "__main__":
+    print("flask server started")
+    initiate_server()
+    app.run(debug=True)
 
