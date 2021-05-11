@@ -46,8 +46,7 @@ def initiate_server():
 
 
 
-if __name__ == "__main__":
-    print("flask server started")
-    initiate_server()
-    app.run(debug=True,use_reloader=False)
+print("flask server started")
+initiate_server()
+app.run(debug=True,use_reloader=False)
 
