@@ -15,7 +15,7 @@ model = None
 
 @app.route('/', methods=['POST','GET'])
 def home():
-    score = 0
+    score = None
     if request.method=='POST':
         stad = request.form['stadium']
         bat = request.form['batteam']
